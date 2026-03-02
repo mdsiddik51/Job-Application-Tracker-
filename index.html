@@ -35,19 +35,19 @@
 
 <body class="bg-[#F8FAFC]">
     <h1 class=" w-11/12 mx-auto text-2xl md:text-3xl font-bold py-10">Job Application Tracker</h1>
-    <section class=" w-11/12 mx-auto grid grid-cols-3 gap-2">
-        <div class="shadow-sm card  bg-[#F1F2F4] p-5">
-            <p>Total</p>
+    <section class=" w-11/12 mx-auto grid grid-cols-3 gap-4">
+        <article class="shadow-sm rounded-md card  bg-[#F1F2F4] p-5">
+            <p class="font-medium mb-2">Total</p>
             <h1 id="total-count" class=" text-2xl font-bold">8</h1>
-        </div>
-        <div class="shadow-sm card  bg-[#F1F2F4] p-5">
-            <p>Interview</p>
+        </article>
+        <article class="shadow-sm rounded-md card  bg-[#F1F2F4] p-5">
+            <p class="font-medium mb-2">Interview</p>
             <h1 id="interview-count" class=" text-2xl font-bold text-green-500">0</h1>
-        </div>
-        <div class="shadow-sm card  bg-[#F1F2F4] p-5">
-            <p>Rejected</p>
+        </article>
+        <article class="shadow-sm rounded-md card  bg-[#F1F2F4] p-5">
+            <p class="font-medium mb-2">Rejected</p>
             <h1 id="rejected-count" class=" text-2xl font-bold text-red-500">0</h1>
-        </div>
+        </article>
     </section>
     <hr class="my-7 text-[#E6E7E9]">
 
@@ -59,12 +59,12 @@
             <p><span id="jobAvailable">8</span> jobs</p>
         </div>
 
-        <div class="my-6">
-            <button onclick="buttonStyle('all-btn')" class="btn  hover:bg-blue-600 hover:text-white  w-25"
+        <div class="my-6 flex gap-3">
+            <button onclick="buttonStyle('all-btn')" class="btn transition duration-300  hover:bg-blue-600 hover:text-white  px-10 py-2"
                 id="all-btn">All</button>
-            <button onclick="buttonStyle('interview-btn')" class="btn hover:bg-blue-600 hover:text-white"
+            <button onclick="buttonStyle('interview-btn')" class="btn transition duration-300  hover:bg-blue-600 hover:text-white"
                 id="interview-btn">Interview</button>
-            <button onclick="buttonStyle('rejected-btn')" class="btn  hover:bg-blue-600 hover:text-white"
+            <button onclick="buttonStyle('rejected-btn')" class="btn transition duration-300  hover:bg-blue-600 hover:text-white"
                 id="rejected-btn">Rejected</button>
         </div>
     </section>
@@ -91,15 +91,15 @@
 
         <!-- jobs -->
         <!-- job-1 -->
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300  bg-[#FFFFFF] rounded-md p-6 mb-4 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300  bg-[#FFFFFF] rounded-md p-6 mb-4 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class="font-bold text-black">Mobile First Corp</h2>
                     <p class="  text-[#64748B]">React Native Developer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">Remote • Full-time • $130,000 - $175,000</p>
@@ -117,15 +117,15 @@
 
         <!-- job-2 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">WebFlow Agency</h2>
                     <p class=" text-[#64748B]">Web Designer & Developer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
@@ -143,15 +143,15 @@
 
         <!-- job-3 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">DataViz Solutions</h2>
                     <p class=" text-[#64748B]">Data Visualization Specialist</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">Boston, MA • Full-time • $125,000 - $165,000</p>
@@ -169,15 +169,15 @@
 
         <!-- job-4 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">CloudFirst Inc</h2>
                     <p class=" text-[#64748B]">Backend Developer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">Seattle, WA • Full-time • $140,000 - $190,000</p>
@@ -195,15 +195,15 @@
 
         <!-- job-5 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">Innovation Labs</h2>
                     <p class=" text-[#64748B]">UI/UX Engineer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class="text-[#64748B] py-5">Austin, TX • Full-time • $110,000 - $150,000</p>
@@ -221,15 +221,15 @@
 
         <!-- job-6 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">MegaCorp Solutions</h2>
                     <p class=" text-[#64748B]">JavaScript Developer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">New York, NY • Full-time • $130,000 - $170,00</p>
@@ -249,15 +249,15 @@
 
         <!-- job-7 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">StartupXYZ</h2>
                     <p class=" text-[#64748B]">Full Stack Engineer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
-                    <i class=" fa-regular  fa-trash-can pointer-events-none"></i>
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
             <p class=" text-[#64748B] py-5">Remote • Full-time • $120,000 - $160,000</p>
@@ -275,14 +275,14 @@
 
         <!-- job-8 -->
 
-        <article class="card hover:shadow-lg hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
+        <article class="card hover:shadow-xl hover:-translate-y-1 transition duration-300 bg-[#FFFFFF] mb-4 rounded-md p-6 shadow-md">
             <div class="flex justify-between">
                 <div>
                     <h2 class=" font-bold text-black">TechCorp Industries</h2>
                     <p class=" text-[#64748B]">Senior Frontend Developer</p>
                 </div>
                 <button
-                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:scale-110 hover:duration-500 items-center justify-center h-10 w-10 border p-1 rounded-full">
+                    class="flex delete-btn hover:bg-red-600 hover:border-transparent hover:text-white hover:scale-110 transition duration-300 items-center justify-center h-10 w-10 border p-1 rounded-full">
                     <i class=" fa-regular fa-trash-can pointer-events-none"></i>
                 </button>
             </div>
